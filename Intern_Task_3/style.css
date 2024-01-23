@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #bb98bb;
+    width: 100%;
+  }
+  .container {
+    width: 90%;
+    max-width: 34em;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+  .todo{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #new-task {
+    position: relative;
+    background-color: #4b3c4a;
+    padding: 1.8em 1.25em;
+    border-radius: 0.3em;
+    box-shadow: 0 1.25em 1.8em rgba(243, 159, 211, 0.15);
+    display: grid;
+  }
+  #new-task input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid #d1d3d4;
+    padding: 0.8em 0.5em;
+    color: #111111;
+    font-weight: 500;
+  }
+  #new-task input:focus {
+    outline: none;
+    border-color: #99546f;
+  }
+  #new-task button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 2em;
+    max-height: 2em;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #cf85b7;
+    color: #e02a66;
+    outline: none;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+  }
+  #tasks {
+    background-color: #4b3c4a;
+    position: relative;
+    padding: 1.8em 1.25em;
+    margin-top: 3.8em;
+    width: 100%;
+    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+    border-radius: 0.6em;
+  }
+  .task {
+    background-color: #e0dadf;
+    padding: 0.3em 0.6em;
+    margin-top: 0.6em;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+  }
+  .task span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+  }
+  .task button {
+    color: #ffffff;
+    padding: 0.8em 0;
+    width: 2.8em;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .delete {
+    background-color: #fb3b3b;
+  }
+  .edit {
+    background-color: #59d848;
+    margin-left: auto;
+    margin-right: 3em;
+  }
+  .completed {
+    text-decoration: line-through;
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

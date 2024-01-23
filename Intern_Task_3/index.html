@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO-DO App</title>
+    
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="todo">Your Ultimate Todo</h1>
+      <div id="new-task">
+        <input type="text" placeholder="Enter your tasks..." /><br>
+        <input type="number" placeholder="Enter priority..." onkeypress="return event.charCode >= 48 && event.charCode<=57 "/>  <br>
+        <button id="push">Add</button>
+      </div>
+      <div id="tasks"></div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
